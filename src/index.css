@@ -1,13 +1,54 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import-normalize;
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;400;700&display=swap');
+
+/* 
+=============
+Color Themes
+=============
+*/
+
+:root {
+    --mainBackground: #f4f6f8;
+    --tileBackGround: #ffffff;
+    --primaryText: #19202d;
+    --secondaryText: #6e8098;
+    --ternaryText: #5964e0;
+    --primaryBtnBackground: #5964e0;
+    --btnHover: #939bf4;
+    --chkBox: #979797;
+    --chkBoxChecked: #5964e0;
+    --chkBoxHover: #939bf4;
+    --filterBoxBorder: #6e8098;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+[data-theme='dark'] {
+    --mainBackground: #121721;
+    --tileBackGround: #19202d;
+    --primaryText: #FFFFFF;
+    --secondaryText: #6e8098;
+    --ternaryText: #5964e0;
+    --primaryBtnBackground: #5964e0;
+    --btnHover: #939bf4;
+    --chkBox: #979797;
+    --chkBoxChecked: #5964e0;
+    --chkBoxHover: #939bf4;
+    --filterBoxBorder: #6e8098;
+}
+
+.app {
+    background: var(--mainBackground);
+    color: var(--primaryText);
+}
+
+/* 
+==============
+Tile Grid
+==============
+*/
+
+.tile-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    row-gap: 4rem;
 }
