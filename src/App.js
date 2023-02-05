@@ -1,5 +1,7 @@
 import React from "react";
 import useLocalStorage from "use-local-storage";
+import TileContainer from "./Components/tileContainer";
+
 function App() {
   const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   const [theme, setTheme] = useLocalStorage(
@@ -18,6 +20,7 @@ function App() {
       <button onClick={toggleTheme}>
         Switch to {theme === "light" ? "dark" : "light"} Theme
       </button>
+      <TileContainer />
     </div>
   );
 }
