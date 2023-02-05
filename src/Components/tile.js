@@ -16,13 +16,14 @@ const Tile = ({
       {/*section holding position details */}
       <section className="position-container">
         <div className="posted-container">
-          <h4>{postedAt}</h4>
-          <h4>{contract}</h4>
+          <h3>
+            {postedAt} . {contract}
+          </h3>
         </div>
-        <h3>{position}</h3>
-        <h4>{company}</h4>
+        <h2>{position}</h2>
+        <h3>{company}</h3>
       </section>
-      <h3 className="location">{location}</h3>
+      <h5 className="location">{location}</h5>
     </article>
   );
 };

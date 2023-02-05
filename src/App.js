@@ -3,6 +3,7 @@ import useLocalStorage from "use-local-storage";
 import TileContainer from "./Components/tileContainer";
 
 function App() {
+  // Theme selector needs to be made into a seperate component
   const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   const [theme, setTheme] = useLocalStorage(
     "theme",

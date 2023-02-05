@@ -48,7 +48,35 @@ Tile Grid
 
 .tile-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     column-gap: 2rem;
     row-gap: 4rem;
+}
+
+/* 
+==============
+Tile Component
+==============
+*/
+
+.tile {
+    background-color: var(--tileBackGround);
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+
+.location {
+    color: var(--ternaryText);
+}
+
+.position-container h3 {
+    color: var(--secondaryText);
+}
+
+/* flex container with posted at and contract */
+.posted-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--secondaryText);
 }
