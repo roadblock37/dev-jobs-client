@@ -5,7 +5,6 @@ const SVG = ({
   fill = "#FFF",
   width = "20",
   height = "19",
-  className = "",
   viewBox = "0,0,20,19",
   fillRule = "nonzero",
   name

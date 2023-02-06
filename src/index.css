@@ -19,6 +19,7 @@ Color Themes
     --chkBoxChecked: #5964e0;
     --chkBoxHover: #939bf4;
     --filterBoxBorder: #6e8098;
+    --filterFill: #6E8098;
 }
 
 [data-theme='dark'] {
@@ -33,11 +34,23 @@ Color Themes
     --chkBoxChecked: #5964e0;
     --chkBoxHover: #939bf4;
     --filterBoxBorder: #6e8098;
+    --filterFill: #FFFFFF;
+
 }
 
 .app {
     background: var(--mainBackground);
     color: var(--primaryText);
+}
+
+/* 
+==============
+Search bar
+==============
+*/
+
+.filter {
+    fill: var(--filterFill);
 }
 
 /* 

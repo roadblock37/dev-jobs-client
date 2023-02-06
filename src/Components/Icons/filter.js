@@ -3,9 +3,8 @@ const Filter = ({
   width = "20",
   height = "20",
   viewBox = "0,0,20,20",
-  fill = "#6E8098",
+  fill = "",
   fillRule = "nonzero",
-  className = "",
   name
 }) => {
   return (
