@@ -1,5 +1,6 @@
 import React from "react";
 import useLocalStorage from "use-local-storage";
+import SearchBar from "./Components/searchBar";
 import TileContainer from "./Components/tileContainer";
 
 function App() {
@@ -21,7 +22,8 @@ function App() {
       <button onClick={toggleTheme}>
         Switch to {theme === "light" ? "dark" : "light"} Theme
       </button>
-      <TileContainer />
+      {/* <TileContainer /> */}
+      <SearchBar/>
     </div>
   );
 }
