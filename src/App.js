@@ -1,8 +1,8 @@
 import React from "react";
 import useLocalStorage from "use-local-storage";
 import SearchBar from "./Components/searchBar";
+import ThemeToggle from "./Components/themeToggle";
 import TileContainer from "./Components/tileContainer";
-
 function App() {
   // Theme selector needs to be made into a seperate component
   const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -23,7 +23,8 @@ function App() {
         Switch to {theme === "light" ? "dark" : "light"} Theme
       </button>
       {/* <TileContainer /> */}
-      <SearchBar/>
+      {/* <SearchBar/> */}
+      <ThemeToggle/>
     </div>
   );
 }
