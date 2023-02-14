@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import useLocalStorage from "use-local-storage";
 import SearchBar from "./Components/searchBar";
 import ThemeToggle from "./Components/themeToggle";
 import TileContainer from "./Components/tileContainer";
+import ThemeContext from "./Context/themeContext";
+
 function App() {
   // Theme selector needs to be made into a seperate component
   const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -18,14 +20,19 @@ function App() {
   };
 
   return (
-    <div className="app" data-theme={theme}>
-      <button onClick={toggleTheme}>
-        Switch to {theme === "light" ? "dark" : "light"} Theme
-      </button>
-      {/* <TileContainer /> */}
-      {/* <SearchBar/> */}
-      <ThemeToggle/>
-    </div>
+    <ThemeContext.Provider value={theme}>
+      <div className={theme}>
+        <input
+          type="checkbox"
+          onChange={(e) => {
+            setTheme(e.target.checked ? "dark" : "light");
+          }}
+        ></input>
+        {/* <TileContainer /> */}
+        <SearchBar />
+        {/* <ThemeToggle/> */}
+      </div>
+    </ThemeContext.Provider>
   );
 }
 
