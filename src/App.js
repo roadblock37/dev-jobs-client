@@ -20,8 +20,8 @@ function App() {
   };
 
   return (
+    <div className='app'>
     <ThemeContext.Provider value={theme}>
-      <div className={theme}>
         <input
           type="checkbox"
           onChange={(e) => {
@@ -31,8 +31,8 @@ function App() {
         {/* <TileContainer /> */}
         <SearchBar />
         {/* <ThemeToggle/> */}
-      </div>
     </ThemeContext.Provider>
+      </div>
   );
 }
 
