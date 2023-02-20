@@ -241,6 +241,11 @@ Tile Component
 
 }
 
+.position-container:hover {
+  cursor: pointer;
+  color: var(--secondaryText);
+}
+
 .position-container h3 {
     color: var(--secondaryText);
 }
