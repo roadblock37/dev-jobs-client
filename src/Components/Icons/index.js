@@ -2,6 +2,7 @@ import React from "react";
 import CheckIcon from "./check";
 import Filter from "./filter";
 import LocationIcon from "./location";
+import Logo from "./logo";
 import MoonIcon from "./moon";
 import SearchIcon from "./search";
 import Sun from "./sun";
@@ -20,6 +21,8 @@ const Icon = (props) => {
       return <MoonIcon {...props} />;
     case "search":
       return <SearchIcon {...props} />;
+      case "logo":
+        return <Logo {...props}/>;
     default:
       return;
   }
