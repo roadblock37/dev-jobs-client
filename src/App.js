@@ -1,5 +1,6 @@
 import React from "react";
 import useLocalStorage from "use-local-storage";
+// import ThemeToggle from "./Components/themeToggle";
 import TileContainer from "./Components/tileContainer";
 
 function App() {
@@ -18,9 +19,10 @@ function App() {
 
   return (
     <div className="app" data-theme={theme}>
-      <button onClick={toggleTheme}>
+      {/* <button onClick={toggleTheme}>
         Switch to {theme === "light" ? "dark" : "light"} Theme
-      </button>
+      </button> */}
+      {/* <ThemeToggle toggle={toggleTheme}/> */}
       <TileContainer />
     </div>
   );
