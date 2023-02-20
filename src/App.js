@@ -24,6 +24,7 @@ function App() {
   return (
     <div className="app" data-theme={theme}>
       <Header toggle={toggleTheme} />
+      <MainContainer />
       {/* <ThemeToggle toggle={toggleTheme}/> */}
       {/* <TileContainer /> */}
       {/* <SearchBar /> */}
