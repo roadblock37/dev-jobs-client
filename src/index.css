@@ -22,7 +22,7 @@ Color Themes
     --filterFill: #6E8098;
 }
 
-.dark {
+[data-theme='dark'] {
     --mainBackground: #121721;
     --tileBackGround: #19202d;
     --primaryText: #FFFFFF;

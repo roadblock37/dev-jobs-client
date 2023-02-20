@@ -14,26 +14,22 @@ function App() {
   );
 
   // Function to toggle betwqeen themes
-  // const toggleTheme = () => {
-  //   const newTheme = theme === "light" ? "dark" : "light";
-  //   setTheme(newTheme);
-  // };
+  const toggleTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+  };
 
   return (
-    <ThemeContext.Provider value={theme}>
-    <div className={theme}>
+    <div className='app' data-theme={theme}>
 
         <input
           type="checkbox"
-          onChange={(e) => {
-            setTheme(e.target.checked ? "dark" : "light");
-          }}
+          onChange={toggleTheme}
         />
         {/* <TileContainer /> */}
         <SearchBar />
         {/* <ThemeToggle/> */}
     </div>
-    </ThemeContext.Provider>
   );
 }
 
