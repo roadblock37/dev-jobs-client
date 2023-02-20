@@ -222,8 +222,23 @@ Tile Component
     padding: var(--tilePadding);
 }
 
+.logo-container {
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.9rem;
+  margin-top: -3rem;
+}
+
 .location {
     color: var(--ternaryText);
+}
+
+.position-container {
+  margin-bottom: 3rem;
+
 }
 
 .position-container h3 {
