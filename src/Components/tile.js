@@ -10,7 +10,9 @@ const Tile = ({
   return (
     <article className="tile">
       {/*container that hold company logo */}
-      <div className="logo-container">
+      <div
+        className="logo-container"
+        style={{ backgroundColor: `${logoBackground}` }}>
         <img src={logo} alt={company} />
       </div>
       {/*section holding position details */}
