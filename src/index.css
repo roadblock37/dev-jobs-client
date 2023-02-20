@@ -41,6 +41,30 @@ Color Themes
 .app {
     background: var(--mainBackground);
     color: var(--primaryText);
+    width: 100%;
+}
+
+/* 
+==============
+Header
+==============
+*/
+
+.header {
+  padding-top: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-image: url("./Images/tablet/bg-pattern-header.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 10rem;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
 }
 
 /* 
@@ -70,11 +94,12 @@ Theme Toggle
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: black;
+  background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
 }
 
+/* round toggle inside track */
 .slider:before {
     position: absolute;
     content: "";
@@ -82,18 +107,18 @@ Theme Toggle
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: var(--ternaryText);
     -webkit-transition: .4s;
     transition: .4s;
   }
 
-  input:checked + .slider {
+  /* input:checked + .slider {
     background-color: #2196F3;
-  }
+  } */
   
-  input:focus + .slider {
+  /* input:focus + .slider {
     box-shadow: 0 0 1px #2196F3;
-  }
+  } */
   
   input:checked + .slider:before {
     -webkit-transform: translateX(26px);

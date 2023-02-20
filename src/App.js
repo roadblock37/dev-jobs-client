@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import useLocalStorage from "use-local-storage";
+import Header from "./Components/header";
+import Icon from "./Components/Icons";
 import SearchBar from "./Components/searchBar";
 import ThemeToggle from "./Components/themeToggle";
 import TileContainer from "./Components/tileContainer";
@@ -20,8 +22,8 @@ function App() {
 
   return (
     <div className='app' data-theme={theme}>
-
-        <ThemeToggle toggle={toggleTheme}/>
+    <Header toggle={toggleTheme}/>
+        {/* <ThemeToggle toggle={toggleTheme}/> */}
         {/* <TileContainer /> */}
         {/* <SearchBar /> */}
         {/* <ThemeToggle/> */}
