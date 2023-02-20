@@ -54,10 +54,10 @@ Header
   padding-top: 3rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  background-image: url("./Images/tablet/bg-pattern-header.svg");
+  background-image: url("./Images/mobile/bg-pattern-header.svg");
   background-repeat: no-repeat;
-  width: 100%;
-  height: 10rem;
+  /* width: 100%; */
+  height: 5rem;
 }
 
 .header-container {
@@ -71,7 +71,7 @@ Header
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 8rem;
+  width: 6rem;
 }
 
 /* 
@@ -118,14 +118,6 @@ Theme Toggle
     -webkit-transition: .4s;
     transition: .4s;
   }
-
-  /* input:checked + .slider {
-    background-color: #2196F3;
-  } */
-  
-  /* input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
-  } */
   
   input:checked + .slider:before {
     -webkit-transform: translateX(1.6rem);
@@ -192,4 +184,15 @@ Tile Component
     justify-content: space-between;
     align-items: center;
     color: var(--secondaryText);
+}
+
+/* 
+================
+Main Conttainer
+================
+*/
+
+.main-container {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
