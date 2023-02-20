@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import useLocalStorage from "use-local-storage";
 import Header from "./Components/header";
 import Icon from "./Components/Icons";
