@@ -1,9 +1,10 @@
+import React from "react";
 
-const ThemeToggle = () => {
+const ThemeToggle = ({toggle}) => {
     // TODO add theme switching functionality for onClick
     <label className="switch">
-        <input type="checkbox"></input>
-        <span className="slider round"></span>
+        <input type="checkbox" onChange={toggle}/>
+        <span className="slider round"/>
     </label>
 }
 

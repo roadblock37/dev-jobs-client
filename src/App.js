@@ -1,9 +1,8 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import useLocalStorage from "use-local-storage";
 import SearchBar from "./Components/searchBar";
 import ThemeToggle from "./Components/themeToggle";
 import TileContainer from "./Components/tileContainer";
-import ThemeContext from "./Context/themeContext";
 
 function App() {
   // Theme selector needs to be made into a seperate component
@@ -22,12 +21,9 @@ function App() {
   return (
     <div className='app' data-theme={theme}>
 
-        <input
-          type="checkbox"
-          onChange={toggleTheme}
-        />
+        <ThemeToggle toggle={toggleTheme}/>
         {/* <TileContainer /> */}
-        <SearchBar />
+        {/* <SearchBar /> */}
         {/* <ThemeToggle/> */}
     </div>
   );
