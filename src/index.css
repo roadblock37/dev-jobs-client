@@ -188,6 +188,10 @@ Search bar
     padding-right: var(--tilePadding);
 }
 
+.filter:hover {
+  cursor: pointer;
+}
+
 .search-icon {
   display: flex;
   height: 3rem;

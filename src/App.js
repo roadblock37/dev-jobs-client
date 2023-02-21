@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState} from "react";
 import useLocalStorage from "use-local-storage";
 import Header from "./Components/header";
 import Icon from "./Components/Icons";
@@ -15,20 +15,22 @@ function App() {
     defaultDark ? "dark" : "light"
   );
 
+
+  const [checked, setChecked] = useState(false);
+
   // Function to toggle betwqeen themes
   const toggleTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
   };
 
+  
+
+
   return (
     <div className="app" data-theme={theme}>
-      <Header toggle={toggleTheme} />
+      <Header toggle={toggleTheme} isChecked={checked}/>
       <MainContainer />
-      {/* <ThemeToggle toggle={toggleTheme}/> */}
-      {/* <TileContainer /> */}
-      {/* <SearchBar /> */}
-      {/* <ThemeToggle/> */}
     </div>
   );
 }
